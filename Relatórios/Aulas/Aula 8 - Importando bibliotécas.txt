@@ -1,0 +1,21 @@
+# Aula 8 - Importando bibliotecas!
+
+# Trabalhando com módulos, conjunto de funções carregando bibliotecas através dos comandos import e from/import.
+
+# Para trazer funcionalidades extras de bibliotecas de python é necessário importa-las primeiro usando o comando import.
+# "import 'nome do módulo'" desta forma você pode utilizar toda e qualquer função da biblioteca escolhida.
+
+# Em caso de precisar apenas de uma ou algumas funções de alguma biblioteca, se usa o comando no formado à baixo:
+# "from 'nome do módulo' import 'nome da função'" se quiser usar mais do que uma função, use virgula para escolher mais.
+
+# Exemplo de comandos usando import
+import math
+num = int(input('Digite um número: '))
+raiz = math.sqrt(num)
+print('A raiz de {} é igual a {}!'.format(num, math.ceil(raiz)))
+
+# Exemplo de comandos usando "from/import"
+from math import sqrt, ceil
+num = int(input('Digite um número: '))
+raiz = math.sqrt(num)
+print('A raiz de {} é igual a {}!'.format(num, math.ceil(raiz)))

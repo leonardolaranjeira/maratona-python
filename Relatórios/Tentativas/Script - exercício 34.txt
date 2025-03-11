@@ -1,0 +1,16 @@
+
+print('Exercício 34')
+
+'''Escreva um programa que pergunte o salário de um funcionário e calcule o valor do seu aumento. Para salários 
+superiores a R$1,250,00, calcule um aumento de 10%. Para os inferiores ou iguais, o aumento é de 15%.'''
+
+sal = float(input('Digite o salário que deseja verificar o aumento proposto:\n>> R$ '))
+aum1 = (sal * 0.1) + sal
+aum2 = (sal * 0.15) + sal
+
+if sal > 1250.00:
+    print('O aumento para este salário é de 10% passando a ser R$ {}.'.format(aum1))
+else:
+    print('O aumento para este salário é de 15% passando a ser R$ {}.'.format(aum2))
+
+# Desafio concluído!

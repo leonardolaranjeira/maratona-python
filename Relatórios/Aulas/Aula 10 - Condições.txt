@@ -1,0 +1,14 @@
+Aula 10 - Aplicando comandos de "If" e "Else"
+
+- No python após escrever os comandos de if ou else, vc sempre termina com ":".
+Ex: "If 'variável' > 3:"
+Else:
+print('Os valores não coicidem')
+
+- A identação sempre é importante de se lembrar na organização da sintaxe da string, pois ela define quais comandos vão sempre
+ser executados, e outros que vão ser executados através de condições. Então, para os comandos com identação com ' tabulação a frente dos
+outros que estão totalmente no canto esquerdo da tela serão executados apenas com condições, e ja outros que estão totalmente do lado esquerdo, serão executados sempre!
+
+- if e else são condições, ou seja, nunca serão executadas as duas, sempre vai ser uma opção ou outra!
+
+- O bloco das strings de dentro da identação IF será a condição "True" e else é o bloco de condições "False"

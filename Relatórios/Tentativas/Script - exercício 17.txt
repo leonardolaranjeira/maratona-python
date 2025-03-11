@@ -1,0 +1,19 @@
+from math import sqrt, pow
+print('Exercício 17')
+
+# Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triângulo retângulo, calcule e
+# mostre o comprimento da hipotenusa.
+
+print('Calculo da hipotenusa!')
+
+cat1 = float(input('Digite o valor do cateto oposto: '))
+cat2 = float(input('Digite o valor do cateto adjacente: '))
+
+oposto = pow(cat1, 2)
+adja = pow(cat2, 2)
+
+hipo = sqrt(oposto+adja)
+
+print('A soma dos quadrados dos catetos equivalem a: {:.2f}'.format(hipo))
+
+# Desafio concluído!

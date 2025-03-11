@@ -1,0 +1,11 @@
+from calendar import isleap
+print('Exercício 32')
+
+'''Faça um programa que leia um ano qualquer e mostre se ele é BISSEXTO.'''
+
+ano = int(input('Digite algum ano A.c ou D.c e veja se o ano escolhido é bissexto: '))
+bi = isleap(ano)
+
+print('O ano "{}" é bissexto? {}.'.format(ano, bi))
+
+# Desafio concluído!

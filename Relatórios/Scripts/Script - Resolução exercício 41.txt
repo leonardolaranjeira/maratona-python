@@ -1,0 +1,39 @@
+from datetime import date
+vermelhoB = '\033[1:31m'
+Fpreto_cinza = '\033[7:30:47m'
+verdeB = '\033[1:32m'
+azulB = '\033[1:34m'
+roxoB = '\033[1:35m'
+Fazul_brancaB = '\033[1:30:46m'
+limpa = '\033[m'
+
+print('{}Resolução do exercício 41{}'.format(verdeB, limpa))
+
+'''A confederação Nacional de Natação precisa de um programa que leia o ano de nascimento de um atleta e mostre 
+sua categoria, de acordo com a idade:
+
+    - Até 9 anos: MIRIM
+    - Até 14 anos: INFANTIL
+    - Até 19 anos: JUNIOR
+    - Até 20 anos: SÊNIOR
+    - Acima: MASTER'''
+
+print('{}Confira agora qual o seu nível como nadador!{}'.format(Fazul_brancaB, limpa))
+
+atual = date.today().year
+nascimento = int(input('Ano de Nascimento: '))
+idade = atual - nascimento
+print('O atleta tem {} anos.'.format(idade))
+
+if idade <= 9:
+    print('Classificação: {}MIRIM{}'.format(roxoB, limpa))
+elif idade <= 14:
+    print('Classificação: {}INFANTIL{}'.format(azulB, limpa))
+elif idade <= 19:
+    print('Classificação: {}JUNIOR{}'.format(verdeB, limpa))
+elif idade <= 25:
+    print('Classificação: {}SÊNIOR{}'.format(vermelhoB, limpa))
+else:
+    print('Classificação: {}MASTER{}'.format(Fpreto_cinza, limpa))
+
+# Desafio corrigído!

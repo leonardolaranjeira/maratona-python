@@ -1,0 +1,79 @@
+Aula 9 - Fatiamento de strings, análises e transformações!
+
+
+Fatiamentos
+
+O exemplo para as explicações de cada parte será usando a frase "Curso em Vídeo Python".
+
+"frase = 'C u r s o   e m   v  í  d  e  o     P  y  t  h  o  n'"
+	  0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+- A contagem de caractéres numa string se inicia do 0 e segue em sequencia.
+
+- A maneira mais simples de se fatiar uma string no python, é identificando a variável e
+colocar entre colchetes o número da posição do caractér q deseja identificar na frase.
+Ex: frase[9] (fazer isso, fará com que a resposta seja a letra "V", pois ela está na nona
+posição de caractéres da frase, não se esquecendo que os espaços entre palavras também contam).
+	Você também pode digitar o comando como frase[9:13], e vai indicar a resposta como "Víde"
+pois o último caracter não é contabilizado.
+ Se você fizer por exemplo "frase[9:21:2]" a frase será contabilizada de 2 em 2. Por exemplo:
+"Vdo Pto".
+
+- Se você escrever "frase[:5]" ele começa do 0 sempre e vai até a quantidade que o usuário indicar,
+também pode ser feito "frase[15:]", que indica que começara a contagem do valor indicado e segue até o final.
+
+Análise
+
+- A função len() indica o comprimento total da string.
+Ex: len(frase)
+
+- Pode se usar também "frase.count('o')"
+Vai contar apenas os caractéres exigidos
+Se eu usar por exemplo "frase.count('o',0,13), vai indicar apenas quantos caractéres do tipo escolhido tem
+entre 0 e 13 caracteres.
+
+-Tem também a função find(), que localiza pra você em que parte da frase esta o caracter ou caracteres ]
+pedidos na função exemplo frase.find('deo'). Ex: Curso em ví'DEO' Python.
+	Se o usuário solicitar uma string que não existe dentro da frase, o console retornará o resultado "-1", indicando que
+não existe a solicitação exigida!
+
+- Além destes, também existe um operador chamado "in", que seria usado mais ou menos como:
+"'Curso' in frase", ou seja, to perguntando para o python, se existe a palavra "curso" dentro da frase.
+O resultado será "True" ou "False"!
+
+Transformação
+
+- O "replace" é a funcionalidade usada para "substituir" valores da string por exemplo:
+Se eu escrevo "frase.replace('Python','Android'), eu to pedindo para o python que substitua todas as palavras "Python" da string por "android".
+
+- Os métodos Upper ou Lower, transformam todos os caractéres em maiúsculas ou minúsculas!
+Ex: frase.lower() ou frase.upper()
+
+- Temos também o "captalize" ele transforma todas os caracteres além do primeiro (0), em minúsculas na frase.
+Então a frase ficaria de "Curso em Vídeo Python" para "Curso em vídeo python" através deste comando.
+Ex: frase.captalize()
+
+- Além desta tem também o "title" que ele transforma todas as palavras da string com suas primeiras letras em maiúsculas.
+Ex: "Curso Em Vídeo Python" sendo escrito "frase.title()"
+
+Agora a string utilizada nos proximos exemplos sera "Aprenda python" e o total de caracteres é 19, sendo de 0 a 18. No caso a frase
+está escrita com três espaços vazios no inicio e dois vazios no fim "   Aprenda Python  ".
+
+- A função strip() é importante na questão de eliminação dos espaços inúteis de uma frase, ou seja, ele vai deixar a contagem a partir da letra "A" e vai até "n" contabilizando 13 caracteres!
+Ex: frase.strip()
+
+- De forma similar ao strip(), temos a funcionalidade "rstrip()" (O r indica "Right" que trabalha apenas no lado direito da string), que remove apenas os últimos espaços inúteis de uma frase.
+Ex: frase.rstrip()
+
+- Em seguida tempos o "lstrip()" (O l indica "left" que trabalha apenas no lado esquerdo da string), que remove apenas os primeiros espaços inúteis de uma frase.
+Ex: frase.lstrip()
+
+Divisão
+
+- A função split() divide a string em uma lista, ou seja, cada palavra vai ficar com seu espaço, então no lugar da string "Curso em Vídeo Python" ser indicada de 0 a 20, será cada palavra da string
+separar individualmente como uma lista.
+Ex: frase.split()
+
+Junção
+
+- A função join() serve para juntar listas que estão divididas como a de uma função split(), então se eu fizer "'-'.join(frase)", a minha frase que estava separada em lista, será unificada como
+"Curso-em-Vídeo-Python"

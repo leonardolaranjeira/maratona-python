@@ -1,0 +1,21 @@
+As condições aninhadas surgem através do uso de If e else, onde se tem mais do q apenas duas condições a serem tratadas na questão,
+se você precisa acrescentar demais condições, se uso "elif" e através disso vc vai dando novas condições de dentro do bloco "If".
+
+- Seja elif ou else, ambos são opcionais e só se usa se vc quer acrescentar mais do que uma condição no seu script!
+
+- Através do uso do "elif" você pode adicionar inúmeras condições!
+
+Exemplo de script:
+
+nome = str(input('Qual é seu nome? ')).strip()
+if nome == 'Leonardo':
+    print('Que nome bonito!')
+elif nome == 'Pedro' or nome == 'Maria' or nome == 'Paulo':
+    print('Seu nome é bem popular no Brasil.')
+elif nome in 'Ana Cláudia Jéssica Juliana':
+    print('Belo nome feminino!')
+else:
+    print('Seu nome é bem normal.')
+print('Tenha um bom dia, {}!'.format(nome))
+
+(Este script só te deseja um bom dia e dependendo da condição em que se aplica o nome digitado, será uma condição definida) 

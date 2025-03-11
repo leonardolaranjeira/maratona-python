@@ -1,1 +1,1 @@
-# maratona-python
+# Repositório destinado a estudo de Python e Lógica de programação!

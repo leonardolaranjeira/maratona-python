@@ -1,0 +1,16 @@
+Aula 07 – Operadores aritméticos
+
+Operadores aritméticos em python
+1.	+ (Adição)
+2.	– (Subtração)
+3.	* (Multiplicação)
+4.	/ (Divisão)
+5.	** (Potência)
+6.	// (Divisão inteira)
+7.	% (Resto da divisão)
+
+Ordem de precedência dos operadores aritméticos em Python
+1.	( )
+2.	**
+3.	* , / , // e %
+4.	+ e –

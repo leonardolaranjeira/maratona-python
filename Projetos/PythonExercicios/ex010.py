@@ -1,0 +1,13 @@
+print('Exercício 10')
+
+# Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostre quantos dólares ela pode comprar.
+# Considere US$1.00 = R$3.27
+
+nome = input('Qual é o seu nome? ')
+print('Olá {}, quantos reais você quer trocar em dólar?'.format(nome))
+reais = float(input('Digite o valor desejado: R$'))
+dolar = reais/3.27
+
+print('Com R${:.2f} você consegue comprar US${:.2f}!'.format(reais, dolar))
+
+# Desafio concluído!

@@ -1,0 +1,66 @@
+from random import randint
+from time import sleep
+
+bold = '\033[1m'
+vermelhoB = '\033[1:31m'
+verdeB = '\033[1:32m'
+amareloB = '\033[1:33m'
+Fpreto_vermelhoB = '\033[1:31:40m'
+Fpreto_verdeB = '\033[1:32:40m'
+Fcinza_verdeB = '\033[1:32:40m'
+limpa = '\033[m'
+
+print(f'{verdeB}Resolução do exercício 45{limpa}')
+
+'''Crie um programa que faça o computador jogar jokenpô com você.'''
+
+print(f'{Fpreto_verdeB}Pedra, papel ou tesoura?{limpa}')
+
+itens = ('Pedra', 'Papel', 'Tesoura')
+computador = randint(0, 2)
+print(f'{Fpreto_verdeB}JOKEMPO!!!{limpa}\n{vermelhoB}0) PEDRA{limpa}\n{verdeB}1) PAPEL{limpa}\n{amareloB}'
+      f'2) TESOURA{limpa}')
+jogador = int(input(f'{bold}Qual é a sua jogada?{limpa} '))
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PO!!!')
+sleep(1)
+
+print('-=' * 11)
+print(f'Computador: {itens[computador]}')
+print(f'Jogador: {itens[jogador]}')
+print('-=' * 11)
+
+if computador == 0:  # Computador jogou PEDRA
+    if jogador == 0:
+        print('EMPATE')
+    elif jogador == 1:
+        print('JOGADOR VENCE')
+    elif jogador == 2:
+        print('COMPUTADOR VENCE')
+    else:
+        print('JOGADA INVÁLIDA')
+
+elif computador == 1:  # Computador jogou PAPEL
+    if jogador == 0:
+        print('COMPUTADOR VENCE')
+    elif jogador == 1:
+        print('EMPATE')
+    elif jogador == 2:
+        print('JOGADOR VENCE')
+    else:
+        print('JOGADA INVÁLIDA')
+
+elif computador == 2:  # Computador jogou TESOURA
+    if jogador == 0:
+        print('JOGADOR VENCE')
+    elif jogador == 1:
+        print('COMPUTADOR VENCE')
+    elif jogador == 2:
+        print('EMPATE')
+    else:
+        print('JOGADA INVÁLIDA')
+
+# Desafio corrigído!

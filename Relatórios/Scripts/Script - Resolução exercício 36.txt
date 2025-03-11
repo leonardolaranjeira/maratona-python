@@ -1,0 +1,24 @@
+
+print('Resolução do exercício 36')
+
+'''Escreva um programa para aprovar o empréstimo bancário para a compra de uma casa. O programa vai perguntar o 
+"valor da casa", o "salário" do comprador e em "quantos anos" ele vai pagar. Calcule o valor da prestação mensal, 
+sabendo que ela não pode exceder 30% do salário ou então o empréstimo será negado.'''
+
+casa = float(input('Valor da casa: R$'))
+salario = float(input('Salário do comprador: R$'))
+anos = int(input('Quantos anos de financiamento: '))
+# Solicitação das informações necessárias ao usuário.
+
+minimo = salario * 30 / 100  # Cálculo de 30% do salário do cliente!
+prestacao = casa / (anos * 12)  # Valor da mensalidade calculada!
+
+print('Para pagar uma casa de R${:.2f} em {} anos, a prestação será de R${:.2f}.'
+      .format(casa, anos, prestacao))
+
+if prestacao <= minimo:
+    print('Empréstimo pode ser concedido!')
+else:
+    print('Empréstimo negado!')
+
+# Desafio corrigído!

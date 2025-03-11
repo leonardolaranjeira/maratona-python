@@ -1,0 +1,1 @@
+from exres.utilidadescev import moeda, dados

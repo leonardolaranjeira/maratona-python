@@ -1,0 +1,18 @@
+Bases de conversão númericas!
+
+- O sistema binário é um sistema de numeração que utiliza apenas dois dígitos: 0 e 1. É a base fundamental para a representação e processamento de informações em computadores e sistemas digitais.
+No sistema binário, cada dígito representa um bit (binary digit), que é a menor unidade de informação em computação. Cada posição no número binário corresponde a uma potência de 2. 
+O dígito mais à direita representa 2^0 (2 elevado a 0), o próximo à esquerda representa 2^1 (2 elevado a 1), o próximo representa 2^2 (2 elevado a 2), e assim por diante.
+Por exemplo, o número binário "1010" representa a soma de 2^3 + 0 + 2^1 + 0, resultando no valor decimal 10.
+
+- O sistema octal é um sistema de numeração que utiliza oito dígitos: 0, 1, 2, 3, 4, 5, 6 e 7. É uma base numérica menos comum do que o sistema decimal, mas ainda é usado em algumas áreas específicas.
+No sistema octal, cada posição no número corresponde a uma potência de 8. O dígito mais à direita representa 8^0 (8 elevado a 0), o próximo à esquerda representa 8^1 (8 elevado a 1), 
+o próximo representa 8^2 (8 elevado a 2) e assim por diante. Por exemplo, o número octal "27" representa a soma de 2 * 8^1 + 7 * 8^0, resultando no valor decimal 23.
+
+- O sistema hexadecimal é um sistema de numeração que utiliza 16 dígitos: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E e F. É amplamente utilizado em ciência da computação e programação, especialmente para representar 
+números binários de maneira mais compacta e amigável.
+No sistema hexadecimal, cada dígito representa um valor que varia de 0 a 15. Os dígitos de 0 a 9 têm os mesmos valores que no sistema decimal, 
+enquanto os dígitos de A a F representam valores de 10 a 15, respectivamente. A diferença significativa do sistema hexadecimal em relação ao sistema decimal é que, 
+em vez de aumentar a potência de 10 a cada posição, a potência de 16 é usada. O dígito mais à direita representa 16^0 (16 elevado a 0), o próximo à esquerda representa 
+16^1 (16 elevado a 1), o próximo representa 16^2 (16 elevado a 2) e assim por diante.
+Por exemplo, o número hexadecimal "1F" representa a soma de 1 * 16^1 + 15 * 16^0, que é igual a 31 em decimal.

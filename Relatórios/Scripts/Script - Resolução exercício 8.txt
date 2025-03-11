@@ -1,0 +1,16 @@
+print('Exercício 8')
+
+# Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros.
+
+print('Medidas de comprimentos em metros, centímetro e milímetros! \n')
+
+metros = float(input('Digite um valor em metros: \n'))
+print('O valor definido em metros foi: {:.1f}'.format(metros))
+
+cm = metros*100
+print('{} mtr em centímetros é igual à: {:.0f} cm'.format(metros, cm))
+
+mm = metros*1000
+print('{} mtr em milímetros é igual à: {:.0f} mm'.format(metros, mm))
+
+# Correção feita!

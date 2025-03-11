@@ -1,0 +1,34 @@
+print('Exercício 9')
+
+# Faça um programa que leia um número inteiro qualquer e mostre na tela a sua tabuada.
+
+print('Escolha um número para ser mostrada a tabuada do mesmo!')
+
+numero = int(input('Digite um número: '))
+
+x0 = numero*0
+x1 = numero*1
+x2 = numero*2
+x3 = numero*3
+x4 = numero*4
+x5 = numero*5
+x6 = numero*6
+x7 = numero*7
+x8 = numero*8
+x9 = numero*9
+x10= numero*10
+
+print('Fique abaixo com a tabuáda do {}!'.format(numero))
+print(numero,'x  0 = {}'.format(x0))
+print(numero,'x  1 = {}'.format(x1))
+print(numero,'x  2 = {}'.format(x2))
+print(numero,'x  3 = {}'.format(x3))
+print(numero,'x  4 = {}'.format(x4))
+print(numero,'x  5 = {}'.format(x5))
+print(numero,'x  6 = {}'.format(x6))
+print(numero,'x  7 = {}'.format(x7))
+print(numero,'x  8 = {}'.format(x8))
+print(numero,'x  9 = {}'.format(x9))
+print(numero,'x 10 = {}'.format(x10))
+
+# Desafio concluído!

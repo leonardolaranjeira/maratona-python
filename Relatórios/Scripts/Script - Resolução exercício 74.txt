@@ -1,0 +1,30 @@
+from random import randint
+
+print('Resolução do exercício 74')
+
+'''Crie um programa que vai gerar cinco números aleatórios e colocar em uma tupla. Depois disso, mostre a listagem de 
+números gerados e também indique o menor e o maior valor que estão na tupla.'''
+
+decisao = ''
+maior = 0
+while decisao != 'N':
+    decisao = str(input('Deseja gerar novos números? [S/N]\n')).strip().upper()[0]
+    if decisao == 'N':
+        print('Encerrando programa...')
+        break
+    if decisao not in ['S', 'N']:
+        print('Opção inválida. Tente novamente!')
+        print('=-' * 30)
+    else:
+        n = (randint(0, 10), randint(0, 10), randint(0, 10),
+             randint(0, 10), randint(0, 10))
+
+        print('=-' * 30)
+        print(f'Os valores sorteados foram: ', end='')
+        for num in n:
+            print(f'{num} ', end='')
+        print(f'\nO maior valor sorteado foi {max(n)}')
+        print(f'O menor valor sorteado foi {min(n)}')
+        print('=-' * 30)
+
+# Desafio corrigido!

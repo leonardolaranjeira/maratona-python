@@ -1,0 +1,13 @@
+
+print(f'{'\033[1:32m'}Resolução do exercício 49')
+
+'''Refaça o DESAFIO 009, mostrando a tabuáda de um número que o usuário escolher, 
+só que agora utilizando um laço for.'''
+
+print(f'{'\033[1:31m'}TABUADA')
+
+num = int(input(f'{'\033[1m'}Escolha um número:{'\033[m'} '))
+for c in range(1, 11):
+    print(f'{num} x {c:2} = {num*c}')
+
+# Desafio corrigído!

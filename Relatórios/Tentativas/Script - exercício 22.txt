@@ -1,0 +1,23 @@
+print('Exercício 22')
+
+''' Crie um programa que leia o nome completo de uma pessoa e mostre: 
+- O nome com todas as letras maiúsculas
+- O nome com todas as letras minúsculas
+- Quantas letras ao todo (Sem considerar espaços)
+- Quantas letras tem o primeiro nome.'''
+
+nome = input('Digite seu nome: ')
+
+nome_sem_espacos = nome.replace(' ', '')
+contagem = len(nome_sem_espacos)
+
+primeiro_nome = nome.split()[0]
+contagem1 = len(primeiro_nome)
+
+
+print('Todas as letras maiúsculas: {}'.format(nome.upper()))
+print('Todas as letras minúsculas: {}'.format(nome.lower()))
+print('Contagem de carácteres é igual à: {}'.format(contagem))
+print('No primeiro nome há: {} letras.'.format(contagem1))
+
+# Desafio concluído!

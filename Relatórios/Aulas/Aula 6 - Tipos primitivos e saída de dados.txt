@@ -1,0 +1,11 @@
+Aula 6 - Tipos primitivos e saída de dados
+
+Em Python, os tipos primitivos são os tipos de dados básicos e fundamentais incorporados na linguagem. Eles representam valores simples e não são compostos por outros valores. Os tipos primitivos em Python incluem:
+
+int: Representa números inteiros, como 1, 2, -3, etc.
+float: Representa números de ponto flutuante, que são números com casas decimais, como 3.14, -0.5, etc.
+bool: Representa valores booleanos, que podem ser True (verdadeiro) ou False (falso).
+str: Representa sequências de caracteres, como "hello", "Python", etc.
+None: Representa a ausência de valor. É usado para indicar quando uma variável não tem um valor atribuído.
+
+Esses tipos primitivos são usados para lidar com diferentes tipos de dados em Python e formam a base para construir estruturas de dados mais complexas e realizar operações nas mesmas.

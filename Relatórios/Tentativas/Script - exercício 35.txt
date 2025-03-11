@@ -1,0 +1,18 @@
+
+print('Exercício 35')
+
+'''Desenvolva um programa que leia o comprimento de três retas e diga ao usuário se elas podem ou não formar 
+um triângulo.'''
+
+print('Digite os valores de três retas e veja se os valores são compativeis para formar um triângulo!')
+
+a = int(input('Digite o primeiro valor: '))
+b = int(input('Digite o segundo valor: '))
+c = int(input('Digite o terceiro valor: '))
+
+if a + b > c and a + c > b and b + c > a:
+    print('Estas retas podem formar um triângulo!')
+else:
+    print('Estas retas não formam um triângulo!')
+
+# Desafio concluído!

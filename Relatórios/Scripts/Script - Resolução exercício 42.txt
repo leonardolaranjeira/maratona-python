@@ -1,0 +1,33 @@
+
+Fcinza_pretoN = '\033[7:30:47m'
+vermelhoB = '\033[1:31m'
+verdeB = '\033[1:32m'
+limpa = '\033[m'
+
+print('{}Resolução do exercício 42{}'.format(verdeB, limpa))
+
+'''Refaça o "DESAFIO 35" dos triângulos, acrescentando o recurso de mostrar que tipo de triângulo será formado:
+    - EQUILÁTERO: Todos os lados são iguias
+    - ISÓSCELES: Dois lados iguais
+    - ESCALENO: Todos os lados diferentes'''
+
+print('-=' * 20)
+print('Analisador de triângulos!')
+print('-=' * 20)
+
+a = float(input('Digite o primeiro segmento: '))
+b = float(input('Digite o segundo segmento: '))
+c = float(input('Digite o terceiro segmento: '))
+
+if a < b + c and b < a + c and c < a + b:
+    print('Os segmentos acima PODEM FORMAR um triângulo, ', end='')
+    if a == b == c:
+        print('EQUILÁTERO!')
+    elif a != b != c != a:
+        print('ESCALENO!')
+    else:
+        print('ISÓSCELES!')
+else:
+    print('Os segmentos acima NÃO PODEM FORMAR um triângulo!')
+
+# Desafio corrigído!
